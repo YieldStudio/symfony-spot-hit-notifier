@@ -10,13 +10,31 @@ Installation
 composer require yieldstudio/symfony-spot-hit-notifier
 ```
 
+#### Enable the Bundle
 
-DSN example
------------
+Add following line in `bundles.php`:
+
+```php
+YieldStudio\Notifier\SpotHit\SpotHitNotifierBundle::class => ['all' => true],
+```
+
+#### Enable the Spot-Hit transport
+  
+Add the `spothit` chatter in `config/packages/notifier.yaml`
+
+````yaml
+framework:
+    notifier:
+        chatter_transports:
+            spothit: '%env(SPOTHIT_DSN)%'
+````
+
+
+#### DSN example
 
 ```
 // .env file
-SPOT_HIT_DSN=spothit://TOKEN@default?from=FROM
+SPOTHIT_DSN=spothit://TOKEN@default?from=FROM
 ```
 
 where:

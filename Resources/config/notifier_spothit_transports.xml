@@ -5,7 +5,7 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="notifier.transport_factory.spot_hit" class="YieldStudio\Notifier\SpotHit\SpotHitTransportFactory"
+        <service id="notifier.transport_factory.spothit" class="YieldStudio\Notifier\SpotHit\SpotHitTransportFactory"
                  parent="notifier.transport_factory.abstract">
             <tag name="texter.transport_factory"/>
         </service>

@@ -24,6 +24,6 @@ class SpotHitNotifierExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-        $loader->load('notifier_spot_hit_transports.xml');
+        $loader->load('notifier_spothit_transports.xml');
     }
 }
