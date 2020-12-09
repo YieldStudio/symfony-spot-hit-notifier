@@ -1,5 +1,5 @@
 {
-    "name": "yield/symfony-spot-hit-notifier",
+    "name": "yieldstudio/symfony-spot-hit-notifier",
     "type": "symfony-bundle",
     "description": "Spot-Hit integration for Symfony Notifier.",
     "keywords": ["sms", "Spot-Hit", "notifier", "symfony"],

@@ -3,6 +3,14 @@ Spot-Hit Notifier
 
 Provides Spot-Hit integration for Symfony Notifier.
 
+Installation
+-----------
+
+```
+composer require yieldstudio/symfony-spot-hit-notifier
+```
+
+
 DSN example
 -----------
 
