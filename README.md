@@ -25,7 +25,7 @@ Add the `spothit` chatter in `config/packages/notifier.yaml`
 ````yaml
 framework:
     notifier:
-        chatter_transports:
+        texter_transports:
             spothit: '%env(SPOTHIT_DSN)%'
 ````
 
