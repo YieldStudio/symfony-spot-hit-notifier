@@ -85,7 +85,7 @@ final class SpotHitTransport extends AbstractTransport
         if (!$data['resultat']) {
             $errors = is_array($data['erreurs']) ? implode(',', $data['erreurs']) : $data['erreurs'];
             throw new TransportException(
-                sprintf('[HTTP %d] Unable to send the SMS: error(s) %s: ', $response->getStatusCode(), $errors),
+                sprintf('[HTTP %d] Unable to send the SMS: error(s) %s', $response->getStatusCode(), $errors),
                 $response
             );
         }
