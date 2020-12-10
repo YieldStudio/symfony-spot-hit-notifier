@@ -53,13 +53,13 @@ final class SpotHitTransport extends AbstractTransport
 
     /**
      * @param MessageInterface|SmsMessage $message
-     * @return SentMessage
+     * @return void
      * @throws TransportExceptionInterface
      * @throws ClientExceptionInterface
      * @throws RedirectionExceptionInterface
      * @throws ServerExceptionInterface
      */
-    protected function doSend(MessageInterface $message): SentMessage
+    protected function doSend(MessageInterface $message): void
     {
         if (!$this->supports($message)) {
             throw new LogicException(sprintf(
@@ -89,10 +89,5 @@ final class SpotHitTransport extends AbstractTransport
                 $response
             );
         }
-
-        $sentMessage = new SentMessage($message, (string)$this);
-        $sentMessage->setMessageId($data['id']);
-
-        return $sentMessage;
     }
 }
