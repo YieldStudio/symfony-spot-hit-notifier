@@ -5,8 +5,8 @@ Provides Spot-Hit integration for Symfony Notifier.
 
 | Symfony Version | Package Version |
 |-----------------|-----------------|
-| 5.1             | 0.0.1           |
-| ^5.2             | ^1.0.0           |
+| ~5.1.0          | 0.0.1           |
+| ^5.2            | ^1.0.0          |
 
 Installation
 -----------
