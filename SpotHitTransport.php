@@ -20,7 +20,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  */
 final class SpotHitTransport extends AbstractTransport
 {
-    protected const HOST = 'https://www.spot-hit.fr/api/envoyer/sms';
+    protected const HOST = 'spot-hit.fr/api/envoyer/sms';
 
     private string $token;
     private ?string $from;
@@ -70,7 +70,7 @@ final class SpotHitTransport extends AbstractTransport
             ));
         }
 
-        $response = $this->client->request('POST', $this->getEndpoint(), [
+        $response = $this->client->request('POST', 'https://'.$this->getEndpoint(), [
             'body' => [
                 'key' => $this->token,
                 'destinataires' => $message->getPhone(),
