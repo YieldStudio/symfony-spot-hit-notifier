@@ -70,7 +70,7 @@ final class SpotHitTransport extends AbstractTransport
             ));
         }
 
-        $response = $this->client->request('POST', 'https://'.$this->getEndpoint(), [
+        $response = $this->client->request('POST', 'https://' . $this->getEndpoint(), [
             'body' => [
                 'key' => $this->token,
                 'destinataires' => $message->getPhone(),
