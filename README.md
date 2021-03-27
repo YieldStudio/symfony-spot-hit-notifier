@@ -3,6 +3,10 @@ Spot-Hit Notifier
 
 Provides Spot-Hit integration for Symfony Notifier.
 
+⚠️ Merged in Symfony core.
+https://github.com/symfony/symfony/pull/39948
+
+
 | Symfony Version | Package Version |
 |-----------------|-----------------|
 | ~5.1.0          | 0.0.2           |
